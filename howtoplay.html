@@ -1,0 +1,50 @@
+<html>
+<head>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <title>Gamefolio</title>
+</head>
+<body class="bg-black text-white text-xs h-screen w-screen overflow-hidden relative tracking-wider">
+  <div id="particles-js" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
+  <div class="relative z-10 flex flex-col items-center h-full">
+    <h1 class="text-7xl mb-8 tracking-widest mt-30" style='font-family: "Pixelify Sans", sans-serif;'>Gamefolio</h1>
+   <p style='font-family: "Pixelify Sans", sans-serif;' class="text-3xl mx-30 mb-8">Personal channels are pretty cool, and most people have one, but I have noticed that a lot of personal websites look very similar, and are very bland.
+I challenge you to remake your portfolio site in the style of your favorite game!</p>
+
+<p style='font-family: "Pixelify Sans", sans-serif;' class="text-5xl mb-4">
+  Requirements:
+</p>
+<div class="space-y-3.25 text-3xl" style='font-family: "Pixelify Sans", sans-serif;'>
+<p>- Website must inform the reader about you, and show off your skills/projects.</p>
+<p>- Website must have your socials and/or ways to contact you.</p>
+<p>- Website must be interactive, in the style of a game.</p>
+<p>- You must log at least four hours using wakatime.</p>
+</div>
+  </div>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: "#9bbc0f" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 2 },
+        line_linked: { enable: false },
+        move: { enable: true, speed: 0.3 }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: false },
+          onclick: { enable: false }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+<head>
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+  <title>Gamefolio</title>
+</head>
+<body class="bg-black text-white text-xs h-screen w-screen overflow-hidden relative tracking-wider">
+  <div id="particles-js" class="absolute top-0 left-0 w-full h-full z-0"></div>
+
+  <div class="relative z-10 flex flex-col items-center h-full">
+    <h1 class="text-7xl mb-12 tracking-widest mt-40" style='font-family: "Pixelify Sans", sans-serif;'>Gamefolio</h1>
+    <div class="flex flex-col items-center tracking-widest space-y-3.25 text-4xl uppercase mb-4" style='font-family: "Pixelify Sans", sans-serif;'>
+  <p>▶ Start Game ◀</p>
+  <p>How to play</p>
+  <p >Rewards</p>
+  <p >Quit Game</p>
+</div>
+
+<p class="deleteme">(use arrow keys and enter to select)</p>
+  </div>
+
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 60, density: { enable: true, value_area: 800 } },
+        color: { value: "#9bbc0f" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: 2 },
+        line_linked: { enable: false },
+        move: { enable: true, speed: 0.3 }
+      },
+      interactivity: {
+        detect_on: "canvas",
+        events: {
+          onhover: { enable: false },
+          onclick: { enable: false }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
