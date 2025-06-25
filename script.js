@@ -42,7 +42,7 @@ changeItem(3, "Quit Game")
 
 function runItem(item) {
 if (item == 1) {
-alert("submission form not ready yet :(")
+window.location.href = "https://forms.hackclub.com/gamefolio"
 } 
 if (item == 2) {
 window.location.href = "/howtoplay.html"
